@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form validation</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    </head>
+
+    <body>
+        <section id="header">
+            <img src="logo.png" width="60" height="60" class="logo">
+            <div>
+                <ul id="nevbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a class="active"href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    </section>
+
+          <section> <form name="messageForm" onsubmit="validateForm()">
+            <h3>Please fill up the fourm to reach us</h3>
+            <label>First Name: </label>
+            <input type="text" name="fname">
+            <br>
+            <br>
+
+            <label>Last Name: </label>
+            <input type="text" name="lname">
+            <br>
+            <br>
+
+            <label>Gender: </label>
+            <input type="radio" name="genderDetails" value="male" checked>Male
+            <input type="radio" name="genderDetails" value="female">Female
+            <input type="radio" name="genderDetails" value="other">other
+            <br>
+            <br>
+
+            <label>E-mail</label>
+            <input type="text">
+            <br>
+            <br>
+            <label>suggestions:</label>
+            <br>
+            <textarea rows="10" cols="25" name="suggestions" placeholder="Tell us your suggestion..."></textarea>
+            <br>
+            <br>
+            <label>Privacy Poicy:</label>
+            <input type="hidden">
+
+            <input type="submit" value="Submit">
+        </form></section>
+
+        <script type="text/javascript">
+            function validateForm()
+            {
+                var firstName = document.forms["messageForm"]["fname"].value;
+                var lastName = document.forms["messageForm"]["lname"].value;
+                var gender = document.forms["messageForm"]["genderDetails"].value;
+                var messageDetails = document.forms["messageForm"]["message"].value;
+
+                //alert(messageDetails);
+                if (firstName == "" || lastName == "" || messageDetails == "") 
+                {
+                    alert("Empty fields are present!!! Please enter the values...");
+                }
+
+                else
+                {
+                    alert("Thank you for your feedback!!!")
+                }
+            }
+        </script>
+        <footer class="section-p1" >
+        <div class="col">
+            <img src="img/logo.png" height="80" width="200" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Tokha,Kathmandu</p>
+            <p><strong>Phone:</strong>9876543210</p>
+            <p><strong>Emali:</strong>contactmeatayush@gmail.com</p>
+        </div>
+
+    </footer>
+    </body>
+</html>
+

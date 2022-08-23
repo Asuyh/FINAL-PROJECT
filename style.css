@@ -1,0 +1,197 @@
+* {
+    /*box-sizing: border-box;*/
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+    background: white;
+}
+
+
+.leftcolumn {
+    flex: 50%;
+    }
+
+
+.rightcolumn {
+    flex: 50%;
+padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 0px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+button {
+    height: 50px;
+    width: 50px;    
+}
+img {
+    display: block;
+    width: 250px;
+    margin: auto;
+}
+
+
+h1 {
+font-size: 50px;
+line-height: 1px;
+color: black;
+}
+
+h2 {
+font-size: 46px;
+line-height: 4px;
+color: black;
+}
+
+h4 {
+font-size: 20px;
+color: black;
+}
+
+h6 {
+font-weight: 700;
+font-size: 2px;
+}
+
+p {
+font-size: 16px;
+color: darkgray;
+margin: 15px o 20px 0;
+}
+
+.section-p1 {
+padding: 15px 30px;
+}
+
+.section-m1{
+margin: 15px 0;
+}
+body {
+width: 100%;
+}
+#header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 80px;
+background: lightgray;
+box-shadow: 0 5px 15px rgb(0, 0, 0,);
+z-index: 999;
+position: sticky;
+top: 0;
+left: 0;
+
+}
+#nevbar{
+display: flex;
+align-items: center;
+justify-content: safe center;
+}
+
+#nevbar li{
+list-style: none;
+padding: 0 20px;
+position: relative ;
+}
+
+#nevbar li a{
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color: black;
+transition: 0.3s ease;
+}
+
+#nevbar li a:hover,
+#nevbar li a.active {
+color: green;
+}
+#nevbar li a.active::after,
+#nevbar li a:hover::after {
+content: "";
+width: 30%;
+height: 2px;
+background: #088178;
+position: absolute;
+bottom: -4px;
+left: 20px;
+}
+#e {
+background-image: url("img/e.jpg");
+height: 90vh;
+width: 87.5%;
+background-size: cover;
+background-position: top 25% right 0;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+}
+#e h1{
+color: #088178;
+}
+
+#banner{
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+text-align: center;
+background-image: url(img/banner.jpg);
+width: 100%;
+height: 40vh;
+}
+#product1{
+text-align: center;
+}
+#product .pro{
+width: 23%;
+min-width: 250px;
+padding: 10px 12px;
+border: 1px solid #cce7d0;
+
+}
+#product .pro img{
+width: 100%;
+border-radius: 20px;
+
+}
